@@ -1,0 +1,125 @@
+#hero-section {
+  background-color: #659dbd;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(101, 157, 189, 0.3),
+      rgba(83, 129, 155, 0.3)
+    ),
+    url('../pictures/main_pic.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-section h1 {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: whitesmoke;
+  font-size: 4.5rem;
+  animation: fadeIn ease 3s;
+}
+
+#hero-section h3 {
+  margin: 0 auto;
+  width: 450px;
+  color: whitesmoke;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  animation: fadeIn ease 4s;
+}
+
+#hero-section a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 260px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fbeec1;
+  font-size: 30px;
+  color: #c08d4b;
+  border: none;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+
+#hero-section a:hover {
+  cursor: pointer;
+  background-color: #c08d4b;
+  color: #fbeec1;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  animation: fadeIn 3s;
+}
+
+.hero-buttons img {
+  width: 120px;
+  border-radius: 50px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Offered Classes */
+
+.offered-classes {
+  background-color: whitesmoke;
+}
+#offered-classes h3 {
+  color: #8d8741;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.cards img {
+  width: 220px;
+  height: 200px;
+  margin-left: 0;
+  border-radius: 5px;
+}
+
+.card {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 600px;
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container {
+  margin: 20px;
+}

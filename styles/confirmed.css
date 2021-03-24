@@ -1,0 +1,78 @@
+.confirmed-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(224, 133, 163, 0.8);
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(216, 112, 147, 0.3);
+  color: #53432f;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 70px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Background effect */
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #bc986a 50%, #fbeec1 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}

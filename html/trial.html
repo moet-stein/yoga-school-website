@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YogaAir_Schedule</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="icon" href="../pictures/favicon.png" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/trial.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="website-logo">
+          <img src="../pictures/logo.png" alt="" />
+        </div>
+        <nav>
+          <a href="../html/index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="../html/schedule.html"
+            ><i class="fa fa-calendar"></i> Class Schedule</a
+          >
+          <a href="../html/blog.html"><i class="fa fa-pen"></i> Blog</a>
+          <a class="active" href="#"
+            ><i class="fas fa-running"></i> Trial Class</a
+          >
+          <a href="../html/contact.html"
+            ><i class="fa fa-fw fa-user"></i> Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="trial-container">
+        <div class="trial-title">
+          <h1>Trial Class Registration</h1>
+        </div>
+        <div class="trial-intro">
+          <img src="../pictures/vinyasa.png" alt="" />
+          <p>
+            Do you want to try our Yoga lesson? Fill out the form and we will
+            contact you as soon as possible!
+          </p>
+        </div>
+        <div class="trial-content">
+          <div class="registration-form">
+            <!-- Form -->
+            <form id="form" action="../html/confirmed.html">
+              <h2>Registration Form</h2>
+              <!-- Full Name -->
+              <div class="form-group" id="form-group-fullname">
+                <label for="fullName">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  placeholder="Full Name"
+                  name="fullName"
+                />
+                <small>Error Message</small>
+              </div>
+              <!-- Phone Number -->
+              <div class="form-group" id="form-group-id">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="555-555-5555"
+                  name="phone"
+                />
+                <small>Error Message</small>
+              </div>
+              <!-- Email Address -->
+              <div class="form-group" id="form-group-eamil">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@address.com"
+                  name="email"
+                />
+                <small>Error Message</small>
+              </div>
+              <!-- Age   -->
+              <div class="form-group age">
+                <label for="age">Age </label>
+                <select name="age" id="age">
+                  <option value="younger">20 or younger</option>
+                  <option value="40">21 to 40</option>
+                  <option value="60">41 to 60</option>
+                  <option value="older">61 or older</option>
+                </select>
+              </div>
+              <!-- Level -->
+              <div class="form-group experience">
+                <h3>Experience in Yoga</h3>
+                <div id="levels" class="levels">
+                  <div class="level">
+                    <input
+                      type="radio"
+                      id="beginner"
+                      name="level"
+                      value="Beginner"
+                    />
+                    <label for="beginner"> Beginner </label><br />
+                  </div>
+                  <div class="level">
+                    <input
+                      type="radio"
+                      id="intermediate"
+                      name="level"
+                      value="Intermediate"
+                    />
+                    <label for="intermediate"> Intermediate</label><br />
+                  </div>
+                  <div class="level">
+                    <input
+                      type="radio"
+                      id="advanced"
+                      name="level"
+                      value="Advanced"
+                    />
+                    <label for="advanced"> Advanced</label><br /><br />
+                  </div>
+                </div>
+                <small>Error Message</small>
+              </div>
+              <!-- Reasons -->
+              <div class="form-group reasons">
+                <h3>Why do you want to start Yoga with us?</h3>
+                <div id="reasons" class="reason">
+                  <input
+                    type="checkbox"
+                    id="reason1"
+                    name="reason"
+                    value="Start"
+                  />
+                  <label for="reason1">I want to start practicing Yoga.</label
+                  ><br />
+                </div>
+                <div class="reason">
+                  <input
+                    type="checkbox"
+                    id="reason2"
+                    name="reason"
+                    value="Enhance"
+                  />
+                  <label for="reason2">To enhance Yoga skills.</label><br />
+                </div>
+                <div class="reason">
+                  <input
+                    type="checkbox"
+                    id="reason3"
+                    name="reason"
+                    value="Weight"
+                  />
+                  <label for="reason3">To lose weight. To sculpt.</label><br />
+                </div>
+                <div class="reason">
+                  <input
+                    type="checkbox"
+                    id="reason4"
+                    name="reason"
+                    value="Teacher"
+                  />
+                  <label for="reason4">To become Yoga teacher.</label><br />
+                </div>
+                <div class="reason">
+                  <input
+                    type="checkbox"
+                    id="reason5"
+                    name="reason"
+                    value="Other"
+                  />
+                  <label for="reason5">Other</label><br />
+                </div>
+                <small>Error Message</small>
+              </div>
+              <!-- Dates -->
+              <div class="form-group date">
+                <label for="date1">Preferable Trial date 1:</label>
+                <input
+                  id="date1"
+                  type="date"
+                  name="trip-start"
+                  value="2021-03-24"
+                  min="2021-03-24"
+                  max="2021-05-24"
+                />
+                <label for="date2">Preferable Trial date 2:</label>
+                <input
+                  id="date2"
+                  type="date"
+                  name="trip-start"
+                  value="2021-03-24"
+                  min="2021-03-24"
+                  max="2021-05-24"
+                />
+                <label for="date3">Preferable Trial date 3:</label>
+                <input
+                  id="date3"
+                  type="date"
+                  name="trip-start"
+                  value="2021-03-24"
+                  min="2021-03-24"
+                  max="2021-05-24"
+                />
+              </div>
+              <!-- Check Terms&Condidtion -->
+              <div class="form-group checking">
+                <div id="checking1" class="checking1">
+                  <input
+                    type="checkbox"
+                    name="checking1"
+                    value="Checking"
+                    id="checking"
+                  />
+                  <label for="checking"
+                    >I have read the terms & condition for YogaAir.</label
+                  >
+                </div>
+                <small>Error Message</small>
+              </div>
+              <!-- Submit button -->
+              <button id="button" type="submit">Register</button>
+            </form>
+          </div>
+          <div class="terms-conditions">
+            <div class="scroll-style">
+              <div class="term-text">
+                <h4>Terms and Conditions for YogaAir</h4>
+
+                <ol>
+                  <li>
+                    Introduction
+                    <ul>
+                      <li>
+                        These Website Standard Terms and Conditions written on
+                        this webpage shall manage your use of our
+                        website, Webiste Name accessible at Website.com. These
+                        Terms will be applied fully and affect to your use of
+                        this Website. By using this Website, you agreed to
+                        accept all terms and conditions written in here. You
+                        must not use this Website if you disagree with any of
+                        these Website Standard Terms and Conditions. Minors or
+                        people below 18 years old are not allowed to use this
+                        Website.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Intellectual Property Rights
+                    <ul>
+                      <li>
+                        Other than the content you own, under these
+                        Terms, YogaAir and/or its licensors own all the
+                        intellectual property rights and materials contained in
+                        this Website. You are granted limited license only for
+                        purposes of viewing the material contained on this
+                        Website.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Restrictions
+                    <ul>
+                      <li>
+                        You are specifically restricted from all of the
+                        following:
+                      </li>
+                      <li>
+                        <ol>
+                          <li>
+                            publishing any Website material in any other media;
+                          </li>
+                          <li>
+                            selling, sublicensing and/or otherwise
+                            commercializing any Website material;
+                          </li>
+                          <li>
+                            publicly performing and/or showing any Website
+                            material;
+                          </li>
+                          <li>
+                            using this Website in any way that is or may be
+                            damaging to this Website;
+                          </li>
+                          <li>
+                            using this Website in any way that impacts user
+                            access to this Website;
+                          </li>
+                          <li>
+                            using this Website contrary to applicable laws and
+                            regulations, or in any way may cause harm to the
+                            Website, or to any person or business entity;
+                          </li>
+                          <li>
+                            engaging in any data mining, data harvesting, data
+                            extracting or any other similar activity in relation
+                            to this Website;
+                          </li>
+                          <li>
+                            using this Website to engage in any advertising or
+                            marketing.
+                          </li>
+                        </ol>
+                      </li>
+
+                      <li>
+                        Certain areas of this Website are restricted from being
+                        access by you and YogaAir may further restrict access by
+                        you to any areas of this Website, at any time, in
+                        absolute discretion. Any user ID and password you may
+                        have for this Website are confidential and you must
+                        maintain confidentiality as well.
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    Your Content
+                    <ul>
+                      <li>
+                        In these Website Standard Terms and Conditions, “Your
+                        Content” shall mean any audio, video text, images or
+                        other material you choose to display on this Website. By
+                        displaying Your Content, you grant YogaAir a
+                        non-exclusive, worldwide irrevocable, sub licensable
+                        license to use, reproduce, adapt, publish, translate and
+                        distribute it in any and all media. Your Content must be
+                        your own and must not be invading any third-party's
+                        rights. YogaAir reserves the right to remove any of Your
+                        Content from this Website at any time without notice.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    No warranties
+                    <ul>
+                      <li>
+                        This Website is provided “as is,” with all faults,
+                        and YogaAir express no representations or warranties, of
+                        any kind related to this Website or the materials
+                        contained on this Website. Also, nothing contained on
+                        this Website shall be interpreted as advising you.
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li-title">
+                    Limitation of liability
+                    <ul>
+                      <li>
+                        n no event shall YogaAir, nor any of its officers,
+                        directors and employees, shall be held liable for
+                        anything arising out of or in any way connected with
+                        your use of this Website whether such liability is under
+                        contract.  YogaAir, including its officers, directors
+                        and employees shall not be held liable for any indirect,
+                        consequential or special liability arising out of or in
+                        any way related to your use of this Website.
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+
+                <h2>Indemnification</h2>
+                <h3>
+                  You hereby indemnify to the fullest extent YogaAir from and
+                  against any and/or all liabilities, costs, demands, causes of
+                  action, damages and expenses arising in any way related to
+                  your breach of any of the provisions of these Terms.
+                </h3>
+                <ol>
+                  <li>
+                    Severability: if any provision of these Terms is found to be
+                    invalid under any applicable law, such provisions shall be
+                    deleted without affecting the remaining provisions herein.
+                  </li>
+                  <li>
+                    Variation of Terms:YogaAir is permitted to revise these
+                    Terms at any time as it sees fit, and by using this Website
+                    you are expected to review these Terms on a regular basis.
+                  </li>
+                  <li>
+                    Assignment: The YogaAir is allowed to assign, transfer, and
+                    subcontract its rights and/or obligations under these Terms
+                    without any notification. However, you are not allowed to
+                    assign, transfer, or subcontract any of your rights and/or
+                    obligations under these Terms.
+                  </li>
+                  <li>
+                    Entire Agreement:These Terms constitute the entire agreement
+                    between YogaAir and you in relation to your use of this
+                    Website, and supersede all prior agreements and
+                    understandings.
+                  </li>
+                  <li>
+                    Governing Law & Jurisdiction :These Terms will be governed
+                    by and interpreted in accordance with the laws of the State
+                    of Country, and you submit to the non-exclusive jurisdiction
+                    of the state and federal courts located in Country for the
+                    resolution of any disputes.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="website-name-bottom">
+        <h3>YogaAir</h3>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="footer-navs">
+        <a href="../html/index.html">Home</a>
+        <a href="../html/schedule.html">Class Schedule</a>
+        <a href="../html/blog.html">Blog</a>
+        <br />
+        <a href="#">Trial Class</a>
+        <a href="../html/contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

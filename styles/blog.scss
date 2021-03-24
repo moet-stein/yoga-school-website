@@ -1,0 +1,146 @@
+$card-color: #ebeae9;
+$green-color: #8d8741;
+$blue-color: #659dbd;
+
+%flex-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-container {
+  margin: 0 auto;
+  width: 100vw;
+  @extend %flex-set;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.blog-container a {
+  text-decoration: none;
+  color: $blue-color;
+  font-size: 30px;
+}
+
+.blog-container p {
+  color: $green-color;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  color: $green-color;
+}
+
+.blog-heading {
+  border-top: 3.5px solid $blue-color;
+  border-bottom: 3.5px solid $blue-color;
+  width: 300px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card-heading {
+  font-size: 25px;
+}
+
+.title-description {
+  margin: 20px;
+}
+
+.date {
+  margin-left: 10px;
+}
+
+.featured-small,
+.featured-big,
+.new-card,
+.all-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+.featured-small:hover,
+.featured-big:hover,
+.new-card:hover,
+.all-card:hover {
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Featured Container */
+
+.featured-contents {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.featured-left,
+.featured-right {
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.featured-small {
+  background-color: $card-color;
+  height: 50%;
+  margin: 15px;
+}
+.featured-small img {
+  width: 100%;
+}
+
+.featured-center {
+  width: 50%;
+}
+
+.featured-big {
+  margin: 15px;
+  padding-bottom: 30px;
+  background-color: $card-color;
+}
+
+.featured-big img {
+  width: 100%;
+}
+
+.logo-img-container {
+  @extend %flex-set;
+  margin-top: 80px;
+}
+
+.logo-img {
+  width: 70%;
+  border-radius: 200px;
+}
+
+/* NEW POSTS*/
+.new-contents {
+  @extend %flex-set;
+  flex-wrap: wrap;
+}
+
+.new-card {
+  width: 300px;
+  background-color: $card-color;
+  margin: 20px;
+}
+
+.new-card img {
+  width: 100%;
+}
+
+/* All post */
+.all-contents {
+  width: 80%;
+  @extend %flex-set;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.all-card {
+  background-color: $card-color;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+}
